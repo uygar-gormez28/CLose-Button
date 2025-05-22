@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        width: 80px;
+        height: 80px;
+        background-color: red;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        transition: 400ms all;
+      }
+
+      .line {
+        position: absolute;
+        width: 80%;
+        height: 4px;
+        background-color: white;
+      }
+
+      .container:hover .line:nth-child(1) {
+        transform: rotate(35deg);
+      }
+
+      .container:hover .line:nth-child(2) {
+        transform: rotate(-35deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </body>
+</html>
